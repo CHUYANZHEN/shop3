@@ -1,0 +1,15 @@
+.container-list{
+    background-color:#faf1f4;
+    font-size:14px;
+    margin-top:10px;
+}
+
+.container-list .bar-list ul{
+    display:flex;
+}
+
+.container-list>div{
+    width:1200px;
+    margin:0 auto;
+    background-color:#fff;
+}
