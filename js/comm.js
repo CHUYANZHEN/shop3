@@ -4,6 +4,7 @@ $(function () {
         type: "get",
         success: function (result) {
             $("header").replaceWith(result);
+
         }
     })
 
@@ -12,7 +13,12 @@ $(function () {
         type: "get",
         success: function (result) {
             $("footer").replaceWith(result);
+            $("#more").click(function () {
+                $("#menus li:nth-child(n+19)").toggleClass("toggle");
+                $(this).toggleClass("up");
+            })
         }
     })
 
 })
+
